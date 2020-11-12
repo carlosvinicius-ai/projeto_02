@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "OpenSans-Light";
+}
+
+html, body{
+	height: 100%;
+}
+
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "OpenSans-Light";
+}
+
+/*Divs Gerais*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+/*Divs Gerais*/
+
+header{
+	background-color:rgb(11, 14, 26);
+	padding: 10px 2%;
+}
+
+.logo-1{
+	float: left;
+	width: 230px;
+	height: 80px;
+	background-image: url('../images/logo1.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: pink;*/
+}
+
+.logo-2{
+	float: right;
+	width: 230px;
+	height: 80px;
+	background-image: url('../images/logo2.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-color: purple;*/
+}
+
+section.cover-form{
+	width: 100%;
+	padding: 0 2%;
+}
+
+.bg{
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../images/bg-form.jpg');
+}
+
+.form-container{
+	float: right;
+	width: 400px;
+	margin-right: 40px;
+	height: 95%;
+	position: relative;
+	top: 3%;
+	/*box-shadow: 0px 5px 0px 0px rgb(2, 52, 117); Caso eu queira colocar depois*/
+	background-color: rgb(7, 21, 94, 0.6);
+}
+
+.form-container h2{
+	font-weight: normal;
+	padding:30px 15px;
+	color: white;
+	font-size: 18px;
+	background-color: rgb(7, 21, 94, 0.8);
+}
+
+.form-container form{
+	margin-top: 8px;
+	padding: 10px;
+}
+
+.form-container form p{
+	font-size: 15px;
+	color: #E9F7FF;
+}
+
+.form-wraper:not(:first-child){
+	margin-top: 40px;
+}
+
+.form-container form input[type=text]{
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	padding-left: 15px;
+}
+
+.form-container form input[type=submit]{
+	background-color: #136351;
+	text-transform: uppercase;
+	color: white;
+	width: 100%;
+	font-size: 25px;
+	height: 50px;
+	cursor: pointer;
+	border: 0;
+}
+
+.call{
+	padding: 40px 0;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	background-color: rgb(11, 14, 26);
+}
+
+
+section.call h2{
+	width: 96%;
+	max-width: 900px;
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+section.call p{
+	margin-top: 25px;
+	width: 96%;
+	max-width: 800px;
+	display: inline-block;
+	color: #E9F7FF;
+	font-size: 22px;
+}
+
+.flex-mosaico{
+	display: flex;
+}
+
+.item-1-mosaico{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+}
+
+.item-2-mosaico{
+	background-color: #E9F7FF;
+	padding:100px 40px;
+	width: 40%;
+	font-size: 22px;
+}
+
+footer{
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgb(11, 14, 26);
+}
+
+
+footer p{
+	margin-top: 10px;
+	color: white;
+}
+
+.Whatsapp{
+    width: 55px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+
+@media screen and (max-width: 768px){
+
+	.flex-mosaico{
+		display: block;
+	}
+
+	.item-1-mosaico{
+		padding-top: 60%;
+		width: 100%;
+	}
+
+	.item-2-mosaico{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 715px){
+	.bg{
+		float: none;
+		text-align: center;
+	}
+
+	.form-container{
+		float: none;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;	
+	}
+}
+
+
+@media screen and (max-width: 710px){
+
+	header{
+		text-align: center;
+	}
+
+	.logo-1,.logo-2{
+		display: inline-block;
+		float: none;
+	}
+}
